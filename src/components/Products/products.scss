@@ -1,0 +1,14 @@
+.card-details {
+  margin-top: 0%;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px 30px;
+  padding-top: 5px;
+  justify-content: flex-start;
+  max-width: 800px;
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+html,
+body,
+.App {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.components-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contents-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.text-bold {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.App-bg {
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url("https://s.alicdn.com/@sc04/kf/H9ca3643e3a414b3c8ebf8249fa39801fk.jpg_960x960.jpg");
+}

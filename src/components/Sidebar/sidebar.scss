@@ -1,0 +1,104 @@
+@import "../../styles/common-css-variables";
+
+.sidebar-top-container {
+  margin-top: 200px;
+  width: 256px;
+  height: 100%;
+  padding: 4px 12px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $shadow-default;
+  border-radius: 6px;
+  margin-right: 20px;
+  padding-bottom: 8px;
+}
+
+.sidebar-options-container {
+  max-width: 200px;
+  padding: 8px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.input-checkbox {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.sidebar-items {
+  margin-top: 20px;
+}
+
+.sidebar-label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.sidebar-label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.sidebar-label-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+  top: 6.4px;
+  left: 6.4px;
+  width: 7px;
+  height: 7px;
+  background: white;
+}
+
+.line {
+  margin-top: 3rem;
+  border-color: #f7f7f7;
+}
